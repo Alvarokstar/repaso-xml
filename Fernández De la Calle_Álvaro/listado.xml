@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Listado generado desde fichero automoviles.xml -->
+<listado tienda="Atalaya Motores">
+  <coche lanzamiento="2023-05-25">
+    <nombre orden="1">Citro C1 (2 unidades)</nombre>
+    <motores>Gasolina y Hibrido.</motores>
+  </coche>
+  <coche lanzamiento="2022-03-11">
+    <nombre orden="2">Morris Kona (5 unidades)</nombre>
+    <motores>Gasolina y Hibrido.</motores>
+  </coche>
+  <coche lanzamiento="2022-02-15">
+    <nombre orden="3">Octanos CRV (20 unidades)</nombre>
+    <motores>Eléctrico, Gasolina y Hibrido.</motores>
+  </coche>
+  <coche lanzamiento="2022-03-01">
+    <nombre orden="4">MegaSpace R4 (120 unidades)</nombre>
+    <motores>Gasolina y Hibrido.</motores>
+  </coche>
+</listado>

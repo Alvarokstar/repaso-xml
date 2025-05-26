@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="e01-esquema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<automoviles>
+    <concesionario>Atalaya Motores</concesionario>
+    <modelo id="R1">
+        <nombreModelo>MegaSpace R4</nombreModelo>
+        <precioDesde moneda="USD">130000.2</precioDesde>
+        <motorizaciones>
+            <motor>Gasolina</motor>
+            <motor>Hibrido</motor>
+        </motorizaciones>
+        <disponibilidad>2022-03-01</disponibilidad>
+        <unidades>120</unidades>
+    </modelo>
+    <modelo id="R2">
+        <nombreModelo>Octanos CRV</nombreModelo>
+        <precioDesde moneda="EUR">26500.50</precioDesde>
+        <motorizaciones>
+            <motor>Eléctrico</motor>
+            <motor>Gasolina</motor>
+            <motor>Hibrido</motor>
+        </motorizaciones>
+        <disponibilidad>2022-02-15</disponibilidad>
+        <unidades>20</unidades>
+    </modelo>
+    <modelo id="Z3">
+        <nombreModelo>Mini XXL</nombreModelo>
+        <precioDesde moneda="USD">17000.25</precioDesde>
+        <motorizaciones>
+            <motor>Gasolina</motor>
+            <motor>Hibrido</motor>
+            <motor>PHEV</motor>
+            <motor>Eléctrico</motor>
+        </motorizaciones>
+        <disponibilidad>2022-04-10</disponibilidad>
+    </modelo>
+    <modelo id="Z4">
+        <nombreModelo>Morris Kona</nombreModelo>
+        <precioDesde moneda="USD">42345</precioDesde>
+        <motorizaciones>
+            <motor>Gasolina</motor>
+            <motor>Hibrido</motor>
+        </motorizaciones>
+        <disponibilidad>2022-03-11</disponibilidad>
+        <unidades>5</unidades>
+    </modelo>
+    <modelo id="R3">
+        <nombreModelo>Citro C1</nombreModelo>
+        <precioDesde moneda="EUR">56789</precioDesde>
+        <motorizaciones>
+            <motor>Gasolina</motor>
+            <motor>Hibrido</motor>
+        </motorizaciones>
+        <disponibilidad>2023-05-25</disponibilidad>
+        <unidades>2</unidades>
+    </modelo>
+</automoviles>
