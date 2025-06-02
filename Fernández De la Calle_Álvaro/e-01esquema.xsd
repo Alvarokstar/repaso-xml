@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <xs:simpleType name="tipoMotor">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Gasolina"/>
+      <xs:enumeration value="Hibrido"/>
+      <xs:enumeration value="PHEV"/>
+      <xs:enumeration value="Eléctrico"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="precioConMoneda">
+    <xs:restriction base="xs:decimal">
+      <xs:pattern value="\d+(\.\d{1,2})?"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="motorizacionesType">
+    <xs:sequence>
+      <xs:element name="motor" type="tipoMotor" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modeloType">
+    <xs:sequence>
+      <xs:element name="nombreModelo" type="xs:string"/>
+      <xs:element name="precioDesde">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="precioConMoneda">
+              <xs:attribute name="moneda" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="motorizaciones" type="motorizacionesType"/>
+      <xs:element name="disponibilidad" type="xs:date"/>
+      <xs:element name="unidades" type="xs:positiveInteger" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:element name="automoviles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="concesionario" type="xs:string"/>
+        <xs:element name="modelo" type="modeloType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
