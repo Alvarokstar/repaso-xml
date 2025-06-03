@@ -14,7 +14,7 @@
 
   <xs:simpleType name="precioConMoneda">
     <xs:restriction base="xs:decimal">
-      <xs:pattern value="\d+(\.\d{1,2})?"/>
+      <xs:fractionDigits value="2"/>
     </xs:restriction>
   </xs:simpleType>
 
